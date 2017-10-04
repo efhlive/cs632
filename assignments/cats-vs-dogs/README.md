@@ -1,4 +1,5 @@
-Short installation guide (assuming you have virtualenv installed on Mac/Linux):
+Short installation guide for Mac/Linux, using virtualenv.
+
 ```
 $ cd ~
 $ virtualenv --system-site-packages ~/my_env
