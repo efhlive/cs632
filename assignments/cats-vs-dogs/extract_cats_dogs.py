@@ -8,7 +8,7 @@ $ tar xvf cifar-10-python.tar.gz
 
 """
 
-import cPickle
+import pickle
 import numpy as np
 from PIL import Image
 import os
