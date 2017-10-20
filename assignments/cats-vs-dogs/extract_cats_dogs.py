@@ -32,7 +32,7 @@ DOG_OUTPUT_LABEL = 0
 
 def unpickle(file):
   with open(file, 'rb') as fo:
-    dict = cPickle.load(fo)
+    dict = pickle.load(fo)
     return dict
     
 data = []
