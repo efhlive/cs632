@@ -31,8 +31,16 @@ data = np.load(TEST_FILE).item()
 # as your train and validation set
 images = data["images"]
 
-# the testing data also contains a unique id
+# the testing data will also contains a unique id
 # for each testing image
+# because your training / validation doesn't have this
+# we will generate some if this doesn't exist
+if "ids" in data:
+    ids = data["ids"]
+else:
+    # generate some random ids
+    ids = list(range(0,len(images)))
+
 ids = data["ids"]
 
 # This file will be created if it does not exist
